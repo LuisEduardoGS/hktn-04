@@ -1,4 +1,4 @@
-ñ/* Globals */
+/* Globals */
 body {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
@@ -7,27 +7,49 @@ body {
   color: white;
 }
 h1 {
+  color: #1d06a7;
   font-size: 36px;
   text-align: center;
   padding: 20px;
 }
 h2 {
-  font-size: 14px;
-}
-h3 {
-  margin: 0;
+  font-size: 36px;
+  text-align: center;
   padding: 20px;
 }
-
-header {
-  width: 100%;
+h3 {
+   padding: 20px;
 }
 
-main {
-  width: 100%;
-  max-width: 960px;
-  margin: auto;
+/*home*/
+.home{
+  position: relative;
 }
+.home img{
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+.home h1{
+  position: absolute;
+  color: white;
+  font-size: 36px;
+  width: 40%;
+  background: rgba(39, 125, 165, 50%);
+  padding: 10px;
+  margin-left: 20px;
+  top:  50%;
+  border-radius: 10px;
+}
+.home h2{
+  font-size: 64px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/*about*/
 
 .about {
   background-color: #7299fe;
@@ -35,13 +57,34 @@ main {
 .about h2 {
   color: #1d06a7;
 }
+.about p{
+  font-size: 14px;
+  padding: 0px 40px 20px;
+  line-height: 2rem;
+}
+.about button{
+  background: #D16FFF;
+  color: aliceblue;
+  margin: 20px 40px 40px;
+  padding: 10px 50px 10px;
+  border-radius: 20px;
+}
+
+/*skills*/
+
 .skills {
   background-color: #9122ff;
+  padding: 40px;
 }
 .skills h2 {
   color: #26cc4b;
   text-align: center;
 }
+.line-white{
+background-color: aliceblue;
+}
+
+/*portfolio*/
 
 .portfolio {
   background-color: #ffd233;
@@ -50,12 +93,16 @@ main {
   color: #00ad84;
 }
 
+/*customers*/
+
 .customers {
   background-color: #3f4e62;
 }
 .customers h2 {
   color: #adff28;
 }
+
+/*contacts*/
 
 .contacts {
   background-color: #1687a0;
