@@ -1,8 +1,8 @@
 /* Globals */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   width: 100%;
-  max-width: 800px;
+  max-width: 960px;
   margin: auto;
   color: white;
 }
@@ -11,11 +11,13 @@ h1 {
   font-size: 36px;
   text-align: center;
   padding: 20px;
+  font-weight: bold;
 }
 h2 {
   font-size: 36px;
   text-align: center;
   padding: 20px;
+  font-weight: bold;
 }
 
 /*home*/
@@ -27,7 +29,7 @@ h2 {
   box-sizing: border-box;
   display: block;
 }
-/*prueba*/
+
 .home h1{
   position: absolute;
   color: white;
@@ -59,21 +61,28 @@ h2 {
 .about p{
   font-size: 14px;
   padding: 0px 40px 20px;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 .about button{
-  background: #D16FFF;
+  background-color: #D16FFF;
   color: aliceblue;
   margin: 20px 40px 40px;
   padding: 10px 50px 10px;
   border-radius: 20px;
+  font-weight: bold;
+  font-size: 22px;
+  }
+
+.about-button:hover{
+  background-color: rgb(195, 0, 255);
+  transition: background-color .5s ease;
 }
 
 /*skills*/
 
 .skills {
   background-color: #9122ff;
-  padding: 40px;
+  padding: 30px 40px 40px;
 }
 .skills h2 {
   color: #26cc4b;
@@ -84,18 +93,29 @@ h2 {
   margin-top: 1rem;
   display: block;
   box-sizing: border-box;
+  border-radius: 20px;
   }
+
+.skills > div{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,49%);
+  margin: auto;
+}
+
+.skills >div>div{
+  padding: 10px;
+}
 
 .white {
   background-color: white;
-  display: block;
   width: 100%;
-}
+  margin: auto;
+  }
 
 .blue {
-width: 50%;
-background-color: teal;
-padding: 15px 0px 0px;
+  width: 50%;
+  background-color: #57EFF9;;
+  padding: 10px;
 }
 
 
@@ -103,12 +123,13 @@ padding: 15px 0px 0px;
 
 .portfolio {
   background-color: #ffd233;
+  padding-top: 40px
   
 }
 
 .portfolio div{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
   margin: auto;
   text-align: center;
   width: 60%;
@@ -133,6 +154,26 @@ width: 100%;
 
 .customers {
   background-color: #3f4e62;
+  padding-top: 40px;
+}
+
+.customers div{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+margin: auto;
+text-align: center;
+width: 80%;
+padding-bottom: 60px;
+}
+
+.customers figure{
+padding: 10px;
+
+}
+.customers img{
+display: block;
+width: 100%;
+
 }
 .customers h2 {
   color: #adff28;
@@ -142,12 +183,40 @@ width: 100%;
 
 .contacts {
   background-color: #1687a0;
-  margin: auto
+  margin: auto;
+  padding: 40px;
+  }
+.contacts form > div{
+  text-align: center;
+  box-sizing: border-box;
+  padding: 30px;
+  margin: auto;
+  width: 80%;
 }
 .contacts h2 {
   color: #ff1b1b;
+  text-align: center;
 }
 .contacts input {
-  padding: 10px;
-  margin: 5px;
+  text-align: center;
+  padding: 15px;
+  width: 45%;
+  margin: 10px;
+  box-sizing: border-box;
 }
+.contacts textarea{
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.contacts button{
+  margin: 20px;
+  padding: 10px 20px 10px;
+  text-align: center;
+  background: #233451;
+  color: white;
+}
+
