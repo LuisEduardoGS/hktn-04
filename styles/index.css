@@ -17,9 +17,6 @@ h2 {
   text-align: center;
   padding: 20px;
 }
-h3 {
-   padding: 20px;
-}
 
 /*home*/
 .home{
@@ -36,7 +33,7 @@ h3 {
   color: white;
   font-size: 36px;
   width: 40%;
-  background: rgba(39, 125, 165, 50%);
+  background: rgba(90, 191, 238, 0.5);
   padding: 10px;
   margin-left: 20px;
   top:  50%;
@@ -82,15 +79,52 @@ h3 {
   color: #26cc4b;
   text-align: center;
 }
-.line-white{
-background-color: aliceblue;
+
+.skills div{
+  margin-top: 1rem;
+  display: block;
+  box-sizing: border-box;
+  }
+
+.white {
+  background-color: white;
+  display: block;
+  width: 100%;
 }
+
+.blue {
+width: 50%;
+background-color: teal;
+padding: 15px 0px 0px;
+}
+
 
 /*portfolio*/
 
 .portfolio {
   background-color: #ffd233;
+  
 }
+
+.portfolio div{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  padding-bottom: 60px;
+  
+}
+
+.portfolio figure{
+padding: 5px;
+}
+
+.portfolio img{
+display: block;
+width: 100%;
+}
+
 .portfolio h2 {
   color: #00ad84;
 }
